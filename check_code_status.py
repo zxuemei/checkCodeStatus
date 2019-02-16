@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # coding=utf-8
 import sys
 import subprocess
@@ -25,15 +24,10 @@ def check_code_git_status():
         else:
             print("\033[7;31m本地代码与服务器有差异，但您选择忽略，故继续编译\033[0m")
             sys.exit(1)
-			
-def main(make_module):
-    if not (make_module[0:1]=='r'):
-        sys.exit(1)
-    else:
-        print("zhangxuemei")
-        check_code_git_status()
 
+def main():
+    check_code_git_status()
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    main()
 
