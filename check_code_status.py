@@ -3,8 +3,8 @@ import sys
 
 def check_code_git_status():
     result = subprocess.getstatusoutput('git status')
-    if result[0]>>8 != 0:
-        print('git statu Failed! pls check your git')
+    if result[0] != 0:
+        print('git status Failed! pls check your git')
         sys.exit(0)
     elif 'Changes not staged for commit:' in result[1]:
         answer = input('编译正式软件发现本地代码有差异，是否要过滤掉？过滤(yes),停止(no)：')
