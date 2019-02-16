@@ -12,10 +12,10 @@ def check_code_git_status():
             print('\033[7;31m 选择错误，中断/033[0m')
             sys.exit(0)
         elif answer == 'yes':
-            print('\033[7;31m 选择过滤，继续编译')
+            print('\033[7;31m 选择过滤，继续编译\033[0m')
             sys.exit(1)
         else:
-            print('\033[7;31m 选择停止，停止编译')
+            print('\033[7;31m 选择停止，停止编译\033[0m')
             sys.exit(0)
 
 def main():
