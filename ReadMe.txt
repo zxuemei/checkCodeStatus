@@ -5,3 +5,5 @@ y=input('请输入y值: ')
 print('x+y的值是: ',(x+y))
 print('x+y的值是: ',(int(x)+int(y)))
 ###值分别为56、11
+
+I/0读写(read/write)同理，故可使用json方法.
